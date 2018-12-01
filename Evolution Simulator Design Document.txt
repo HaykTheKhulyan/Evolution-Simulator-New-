@@ -1,0 +1,11 @@
+Evolution Simulator Design Document
+-----------------------------------
+inspired by https://www.youtube.com/watch?v=0ZGbIKd0XrM&t=4s
+
+should be very customizable
+
+should have a base "creature" object and you can make whatever creature you want, with whatever traits, and the creature object handles the evolution
+
+many toggles
+
+many tracked statistics
