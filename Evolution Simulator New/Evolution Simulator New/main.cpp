@@ -1,6 +1,7 @@
 #include <Graphics.hpp>
 #include <vector>
 #include "Food.h"
+#include "Animal.h"
 
 int main() {
 	// generates a new seed
@@ -10,12 +11,19 @@ int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "The Arena", sf::Style::Close | sf::Style::Titlebar);
 
 	// controls how often food spawns (foodRate of 2.0 doubles food spawn rate, 4.0 quadruples, etc)
-	float foodRate = 1;
+	float foodRate = 3;
+
+	// starting number of animals
+	int startingPopulationSize = 10;
 
 	// stores all the food on the map. eaten food gets deleted.
 	std::vector<Food> foodVector;
 
+	std::vector<Animal> animalVector;
 
+	for (int i = 0; i < startingPopulationSize; i++) {
+		animalVector.emplace_back();
+	}
 
 
 
@@ -38,15 +46,27 @@ int main() {
 			}
 		}
 
-		if (deltaTime > .3 / foodRate) {
+		// updates all the animals in animalVector
+		for (int i = 0; i < animalVector.size(); i++) {
+			animalVector.at(i).Update(deltaTime);
+		}
+
+		// makes a new food object based on the foodRate
+		if (deltaTime > 1 / foodRate) {
 			foodVector.emplace_back();
 			deltaTime = 0;
 		}
 
 		window.clear(sf::Color::White);
 
+		// draws all the food objects
 		for (int i = 0; i < foodVector.size(); i++) {
 			foodVector.at(i).Draw(window);
+		}
+
+		// draws all the animal objects
+		for (int i = 0; i < animalVector.size(); i++) {
+			animalVector.at(i).Draw(window);
 		}
 
 		window.display();

@@ -18,7 +18,7 @@ public:
 
 	void Draw(sf::RenderWindow& window) { window.draw(body); }
 
-
+	sf::Vector2f getPosition() { return body.getPosition(); }
 private:
 	sf::CircleShape body;
 };
