@@ -27,6 +27,12 @@ private:
 
 	sf::Vector2f velocity;
 
-	float timeSinceLastMeal;
+	float xOffset;
+	float yOffset;
+
+	float myTimeSinceLastMeal;
+	float myMacroMovementDeltaTime;
+	float myMicroMovementDeltaTime;
+
 };
 

@@ -1,8 +1,1 @@
-﻿  Animal.cpp
-Animal.cpp(13): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Generating code
-  2 of 132 functions ( 1.5%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    8 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  Evolution Simulator New.vcxproj -> C:\Users\Hayk Khulyan\Desktop\Coding Projects\Evolution-Simulator-New-\Evolution Simulator New\Release\Evolution Simulator New.exe
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.WindowsSDK.targets(46,5): error MSB8036: The Windows SDK version 8.1 was not found. Install the required version of Windows SDK or change the SDK version in the project property pages or by right-clicking the solution and selecting "Retarget solution".

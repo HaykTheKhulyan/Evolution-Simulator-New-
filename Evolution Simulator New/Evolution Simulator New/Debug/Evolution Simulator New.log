@@ -1,2 +1,7 @@
-﻿  Evolution Simulator New.vcxproj -> C:\Users\Hayk Khulyan\Desktop\Coding Projects\Evolution-Simulator-New-\Evolution Simulator New\Debug\Evolution Simulator New.exe
-  Evolution Simulator New.vcxproj -> C:\Users\Hayk Khulyan\Desktop\Coding Projects\Evolution-Simulator-New-\Evolution Simulator New\Debug\Evolution Simulator New.pdb (Partial PDB)
+﻿  Animal.cpp
+c:\users\hayk khulyan\onedrive\coding\evolution-simulator-new-\evolution simulator new\evolution simulator new\animal.cpp(18): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Evolution Simulator New.vcxproj -> C:\Users\Hayk Khulyan\OneDrive\Coding\Evolution-Simulator-New-\Evolution Simulator New\Debug\Evolution Simulator New.exe
